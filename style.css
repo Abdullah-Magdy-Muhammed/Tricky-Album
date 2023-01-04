@@ -41,6 +41,8 @@
   margin-left: 15px;
   column-count: 3;
   column-rule: 2px solid red;
+  column-gap: 25px;
+  column-width: 50px;
   border: 2px solid navy;
   overflow: auto;
   position: absolute;
@@ -83,6 +85,8 @@ img:active {
 @media screen and (max-width: 600px) {
   .left {
     column-count: 2;
+    column-gap: 10px;
+    column-width: 35px;
   }
   mark {
     background-color: blue;
