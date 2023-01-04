@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 90vw;
+  height: 80vh;
+  margin: 10px auto;
+  overflow: auto;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 5px lightblue;
+  transition: all 5s;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.container:hover {
+  transform: skewX(15deg);
+  box-shadow: 0px 10px 10px 5px pink;
+  -webkit-transform: skewX(15deg);
+  -moz-transform: skewX(15deg);
+  -ms-transform: skewX(15deg);
+  -o-transform: skewX(15deg);
+}
+.container:active {
+  transform: scale(0.25);
+  -webkit-transform: scale(0.25);
+  -moz-transform: scale(0.25);
+  -ms-transform: scale(0.25);
+  -o-transform: scale(0.25);
+}
+.left {
+  width: 30vw;
+  margin-left: 15px;
+  column-count: 3;
+  column-rule: 2px solid red;
+  border: 2px solid navy;
+  overflow: auto;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+mark:hover {
+  background-image: linear-gradient(red, yellow);
+}
+mark:active {
+  background-image: linear-gradient(green, yellow);
+}
+.right {
+  width: 45vw;
+  position: absolute;
+  top: 10px;
+  right: 40px;
+}
+.right img {
+  width: 120px;
+  height: 120px;
+  /* border-radius: 50%; */
+  border: 5px solid blue;
+  transition: all 1s;
+}
+img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+img:active {
+  transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -moz-transform: scale(2.5);
+  -ms-transform: scale(2.5);
+  -o-transform: scale(2.5);
+}
+@media screen and (max-width: 600px) {
+  .left {
+    column-count: 2;
+  }
+  mark {
+    background-color: blue;
+    color: white;
+  }
+  .container:hover {
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+  .right {
+    right: 2px;
+    transition: all 5s;
+    -webkit-transition: all 5s;
+    -moz-transition: all 5s;
+    -ms-transition: all 5s;
+    -o-transition: all 5s;
+  }
+  img {
+    transform: rotate(45deg);
+    margin: 30px 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  img:hover {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  img:active {
+    border: 2px dashed blue;
+    box-shadow: 10px 10px 2px red;
+  }
+}
